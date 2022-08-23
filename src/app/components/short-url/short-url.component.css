@@ -1,0 +1,12 @@
+.btn{
+    width: 100%;
+}
+
+.alert{
+    text-align: center;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: #ddd; 
+}

@@ -1,0 +1,26 @@
+<div class="container mt-3">
+    <h1 class="display-5 text-center">Enter URL to shorten</h1>
+    <div class="row mt-5">
+        <div class="col-lg-8">
+            <input type="text" [(ngModel)]="urlName" class="form-control mt-2" placeholder="Enter URL to shorten">
+        </div>
+        <div class="col-lg-4">
+            <button (click)="processURL()" class="btn btn-primary mt-2">Shorten URL</button>
+        </div>        
+    </div>
+    <div class="row mt-2" *ngIf="urlIsProcessed">
+        <div class="col-lg-8">
+            <input type="text" [(ngModel)]="urlShort" class="form-control mt-2" placeholder="shortened URL">
+        </div>
+        <div class="col-lg-4">
+                <button (click)="copyToClipboard()" class="btn btn-primary mt-2" >
+
+                    <i class="fa-solid fa-clipboard"> <a *ngIf="isCopied"> Copied!</a></i>
+                </button>
+        </div>        
+    </div>
+    <app-spinner *ngIf="loading"></app-spinner>
+    <div class="alert alert-dismissible alert-danger mt-3" *ngIf="errorIsShown">
+        <strong>{{errorText | uppercase}}</strong>
+    </div>
+</div>
