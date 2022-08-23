@@ -1,5 +1,9 @@
 # AngularURLShortener
 
+Angular app which allows shortening any URL, using Bitly's API.
+
+<a href="https://ibb.co/jLNBcyk"><img src="https://i.ibb.co/YtCYzcB/2022-08-22-21-59-06.png" alt="2022-08-22-21-59-06" border="0"></a>
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
 
 ## Development server
